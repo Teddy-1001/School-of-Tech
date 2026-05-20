@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preload" as="image" href="/public/front-view-jar-with-coins-academic-cap.webp" />
+    <title>Fees Structure</title>
+</head>
+
+<body>
+    <header id="header"
+        class="fixed inset-x-0 top-0 z-50 bg-gray-900/40 backdrop-blur-md border-b border-white/10 transition-colors duration-300">
+        <div class="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-3">
+                <img src="/public/logo-mark-white.svg" alt="School Logo" class="h-10 w-auto">
+                <span class="text-white font-semibold text-lg hidden sm:block">
+                    School of Future Leaders
+                </span>
+            </a>
+            <!-- Navigation -->
+            <nav class="hidden md:flex items-center gap-8 text-sm text-white/80">
+                <a href="#programs" class="hover:text-white transition">Programs</a>
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#apply" class="hover:text-white transition">Apply</a>
+                <a href="/src/feesStructure.html" class="hover:text-white transition">Fees</a>
+            </nav>
+
+            <!-- CTA -->
+            <div class="flex gap-2 items-center">
+                <a href="#apply"
+                    class="rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-blue-700 transition">
+                    Apply Today
+                </a>
+                <button class="flex sm:hidden" id="openMobileNav">
+                    <i class="fa-solid fa-bars" style="color: rgb(18, 18, 49);"></i>
+                </button>
+            </div>
+
+        </div>
+    </header>
+    <!-- mobile navigation -->
+    <!-- mobile navigation -->
+    <aside class="flex sm:hidden">
+        <nav id="mobileNav"
+            class="fixed inset-y-0 left-0 z-40 w-1/2 bg-gray-900 backdrop-blur-sm flex flex-col items-center justify-center gap-8 text-white text-lg transform -translate-x-full transition-transform duration-300">
+            <a href="/src/index.html" class="hover:text-white transition">Home</a>
+            <a href="#programs" class="hover:text-white transition">Programs</a>
+            <a href="#about" class="hover:text-white transition">About</a>
+            <a href="#apply" class="hover:text-white transition">Apply</a>
+            <a href="/src/feesStructure.html" class="hover:text-white transition">Fees</a>
+
+            <button id="closeMobileNav" class="absolute top-4 right-4 text-white/80 hover:text-white transition">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </nav>
+    </aside>
+    <section class="py-14 bg-white">
+        <div class="max-w-7xl mx-auto px-4 h-auto">
+            <!-- image -->
+            <img src="/public/front-view-jar-with-coins-academic-cap.webp" alt=""
+                class="w-full h-64 md:h-[450px] object-cover rounded-2xl" loading="lazy">
+            <!-- card (starts immediately after image) -->
+            <div class="bg-white rounded-2xl shadow-xl p-8 md:p-16 md:-mt-20 relative z-10 max-w-5xl">
+                <h1 class="text-4xl font-bold text-blue-950 mb-4 leading-relaxed">
+                    School Fee Structure
+                </h1>
+                <p class="text-gray-700 leading-relaxed">
+                    School of Technology provides a world-class learning experience and the best quality education for
+                    your child at an affordable price. We’re always available if you have any questions or wish to
+                    discuss any aspect of the finances.
+                </p>
+                <p class="text-gray-700 leading-relaxed pt-3">
+                    We understand that choosing the right school for your child is a significant decision, and we want
+                    to ensure that you have all the information you need to make an informed choice. Our fee structure
+                    is designed to be transparent and competitive, reflecting the high-quality education and facilities
+                    we provide.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 py-5">
+        <div class="">
+            <h2 class="text-3xl font-semibold text-white mb-8 bg-blue-600 rounded w-fit p-2">Fees Structure</h2>
+            <p class="text-gray-700 leading-relaxed mb-6">
+                Our tuition fees are structured to provide flexibility and value for our students. We offer various
+                payment plans to accommodate different financial situations. For detailed information on our tuition
+                fees, please contact our admissions office or visit our website.
+            </p>
+        </div>
+        <p class="text-3xl font-semibold text-shadow-blue-950 font-raleway">Boarding</p>
+        <p>Preparatory School</p>
+        <div class="overflow-x-auto rounded shadow border border-gray-200">
+
+            <table class="w-full text-left bg-white">
+
+                <!-- header -->
+                <thead class="bg-blue-950 text-white">
+                    <tr>
+                        <th class="px-6 py-4 text-sm font-semibold uppercase tracking-wide">
+                            Class
+                        </th>
+                        <th class="px-6 py-4 text-sm font-semibold uppercase tracking-wide">
+                            Tuition
+                        </th>
+                        <th class="px-6 py-4 text-sm font-semibold uppercase tracking-wide">
+                            Boarding
+                        </th>
+                        <th class="px-6 py-4 text-sm font-semibold uppercase tracking-wide">
+                            Total (KES)
+                        </th>
+                    </tr>
+                </thead>
+                <!-- body -->
+                <tbody class="divide-y divide-gray-100 text-gray-700">
+                    <tr class="hover:bg-gray-50 transition">
+                        <td class="px-6 py-4 font-medium text-blue-950">Grade 1</td>
+                        <td class="px-6 py-4">50,000</td>
+                        <td class="px-6 py-4">30,000</td>
+                        <td class="px-6 py-4 font-semibold text-blue-950">80,000</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition bg-gray-50/40">
+                        <td class="px-6 py-4 font-medium text-blue-950">Grade 2</td>
+                        <td class="px-6 py-4">55,000</td>
+                        <td class="px-6 py-4">30,000</td>
+                        <td class="px-6 py-4 font-semibold text-blue-950">85,000</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition">
+                        <td class="px-6 py-4 font-medium text-blue-950">Grade 3</td>
+                        <td class="px-6 py-4">60,000</td>
+                        <td class="px-6 py-4">35,000</td>
+                        <td class="px-6 py-4 font-semibold text-blue-950">95,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="space-y-4 mt-6">
+
+            <!-- title -->
+            <h2 class="text-2xl font-bold text-blue-950">
+                Other Charges
+            </h2>
+
+            <div class="overflow-x-auto rounded shadow border border-gray-200">
+
+                <table class="w-full text-left bg-white">
+
+                    <!-- header -->
+                    <thead class="bg-blue-950 text-white">
+                        <tr>
+                            <th class="px-6 py-4 text-sm font-semibold uppercase tracking-wide">
+                                Payment Items
+                            </th>
+                            <th class="px-6 py-4 text-sm font-semibold uppercase tracking-wide">
+                                Amount (KES)
+                            </th>
+                            <th class="px-6 py-4 text-sm font-semibold uppercase tracking-wide">
+                                Payment Frequency
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <!-- body -->
+                    <tbody class="divide-y divide-gray-100 text-gray-700">
+
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-6 py-4 font-medium text-blue-950">
+                                Transport for day scholars (Two way). <br>
+                                <span class="text-sm text-gray-500">
+                                    One way is 50% of the amount
+                                </span>
+                            </td>
+                            <td class="px-6 py-4">
+                                66,000 per Term <br>
+                                <span class="text-sm text-gray-500">
+                                    Covers Kiserian, Matasia, Rongai, Ngong, Pipeline Road and Karen<br>
+                                    Weekly Boarders (Optional): 20,000
+                                </span>
+                            </td>
+                            <td class="px-6 py-4">
+                                Termly
+                            </td>
+                        </tr>
+
+                        <tr class="hover:bg-gray-50 transition bg-gray-50/40">
+                            <td class="px-6 py-4 font-medium text-blue-950">
+                                Clinical services within the school, logistics to the hospital and insurance against
+                                accidents in school
+                            </td>
+                            <td class="px-6 py-4">
+                                Day scholars – Kes. 5,000 <br>
+                                Boarders – Kes. 10,000
+                            </td>
+                            <td class="px-6 py-4">Termly</td>
+                        </tr>
+
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-6 py-4 font-medium text-blue-950">
+                                Sports and Talents Development Activities
+                            </td>
+                            <td class="px-6 py-4">
+                                Day Scholars 10,000 <br>
+                                Boarders 20,000
+                            </td>
+                            <td class="px-6 py-4">Termly</td>
+                        </tr>
+
+                        <tr class="hover:bg-gray-50 transition bg-gray-50/40">
+                            <td class="px-6 py-4 font-medium text-blue-950">
+                                Textbooks, exercise books and subscriptions
+                            </td>
+                            <td class="px-6 py-4">35,000</td>
+                            <td class="px-6 py-4">Per Year</td>
+                        </tr>
+
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-6 py-4 font-medium text-blue-950">
+                                Graduation fee
+                            </td>
+                            <td class="px-6 py-4">
+                                Prep School 10,000 <br>
+                                Seniors 15,000
+                            </td>
+                            <td class="px-6 py-4">
+                                Paid at Year 11 & 13. Prep School at Year 2, 6 and Reception
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 py-10">
+
+        <h1 class="text-3xl font-bold text-blue-950 mb-6">
+            Additional Information
+        </h1>
+
+        <ol class="list-decimal space-y-4 text-gray-700 leading-relaxed pl-6">
+
+            <li>
+                Annual fees for years 11 and 13 will be paid in two terms of equal installments in September and
+                January.
+            </li>
+
+            <li>
+                Parents who wish to pay on termly basis need to contact the school in advance.
+            </li>
+
+            <li>
+                Transport within 10kms radius from the school is KSHS 30,000. One way transport is 50% of KSHS 55,000.
+            </li>
+
+            <li>
+                School fees is paid in full before the start of every term and is not refundable. The second option is
+                payment in two installments (50% before school opens and 50% on or before the 15th of the following
+                month).
+            </li>
+
+            <li>
+                Payment in USD will be based on the prevailing market exchange rate of Kenya Shilling to the dollar.
+            </li>
+
+            <li>
+                A parent who may wish to withdraw a child from the school will need to give one term’s notice, otherwise
+                one term fee is charged.
+            </li>
+
+            <li>
+                Family discounts on tuition fees only:
+                <ul class="list-disc pl-6 mt-2 space-y-1 text-gray-600">
+                    <li>2nd Child – 10%</li>
+                    <li>3rd Child – 20%</li>
+                    <li>4th Child – 30%</li>
+                    <li>5th and subsequent Child – 40%</li>
+                </ul>
+            </li>
+
+            <li>
+                Transport discount: 50% for second and subsequent child if on the same route.
+            </li>
+
+            <li>
+                Fees are paid through bank accounts. No cash is accepted. Use Paybill or bank transfer and send proof to
+                accounts email or WhatsApp. Always indicate student name and year.
+            </li>
+
+            <li>
+                The Aviation Program is paid separately upon registration into the program.
+            </li>
+
+            <li>
+                A surcharge of 2% per month is levied for late payment of fees.
+            </li>
+
+            <li>
+                Clinical fee covers nursing services, insurance against accidents, and hospital logistics.
+            </li>
+
+            <li>
+                External exams are paid separately in Sterling pounds. Students must clear fees before sitting exams.
+            </li>
+
+        </ol>
+
+    </section>
+
+    <footer class="bg-blue-950" role="contentinfo">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <!-- Main footer content - grid layout for better alignment -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 py-8 border-b border-blue-800/50 mb-6">
+
+                <!-- Left column: Brand & contact information -->
+                <div class="flex flex-col items-center md:items-start text-center md:text-left space-y-4">
+                    <a href="/" aria-label="Homepage">
+                        <img src="/public/logo-mark-white.svg" class="h-16 w-auto" alt="Williamsted Logo">
+                    </a>
+
+                    <div class="flex flex-col space-y-2">
+                        <a href="tel:+254798125596"
+                            class="flex items-center gap-2 text-white/80 hover:text-white transition-colors duration-200">
+                            <span aria-hidden="true">
+                                <i class="fa-solid fa-phone"></i>
+                            </span>
+                            +254 798 125 596
+                        </a>
+                        <a href="mailto:williamsted1001@gmail.com"
+                            class="flex items-center gap-2 text-white/80 hover:text-white transition-colors duration-200">
+                            <span aria-hidden="true">
+                                <i class="fa-solid fa-envelope"></i>
+                            </span>
+                            williamsted1001@gmail.com
+                        </a>
+                    </div>
+
+                    <p class="text-white/60 text-sm pt-4">&copy; 2026 Williamsted. All rights reserved.</p>
+                </div>
+
+                <!-- Center column: Main navigation (semantic nav with heading) -->
+                <nav aria-label="Footer main navigation" class="flex flex-col items-center md:items-start">
+                    <h3 class="text-white font-semibold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#programs"
+                                class="text-white/80 hover:text-white transition-colors duration-200">Programs</a>
+                        </li>
+                        <li><a href="#about"
+                                class="text-white/80 hover:text-white transition-colors duration-200">About</a></li>
+                        <li><a href="#apply"
+                                class="text-white/80 hover:text-white transition-colors duration-200">Apply</a></li>
+                        <li><a href="/src/feesStructure.html"
+                                class="text-white/80 hover:text-white transition-colors duration-200">Fees
+                                Payment</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Right column: Office hours (not links, proper heading + list) -->
+                <div class="flex flex-col items-center md:items-start">
+                    <h3 class="text-white font-semibold text-lg mb-4">Office Hours</h3>
+                    <ul class="space-y-2 text-white/80 text-sm">
+                        <li>Mon - Fri: 8 am - 5 pm</li>
+                        <li>Saturday: 8 am - 1 pm</li>
+                        <li class="text-white/60">Sunday: CLOSED</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom row: Legal links and tagline -->
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-white/60 text-xs">
+                <div class="flex gap-6">
+                    <a href="#privacy" class="hover:text-white transition-colors duration-200">Privacy Policy</a>
+                    <a href="#terms" class="hover:text-white transition-colors duration-200">Terms of Service</a>
+                </div>
+                <p>Empowering futures through education</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="../js/index.js" defer></script>
+</body>
+
+</html>
